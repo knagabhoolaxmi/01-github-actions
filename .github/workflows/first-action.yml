@@ -15,5 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print the hostname
-        run: echo $HOSTNAME
-    
+        run: 
+          echo $HOSTNAME
+          echo $ls
+          echo $date
+          echo $uname -a
