@@ -11,3 +11,9 @@ jobs:
         run: echo "hello world"
       - name: Print goodbye
         run: echo "done-bye"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the hostname
+        run: echo $HOSTNAME
+    
