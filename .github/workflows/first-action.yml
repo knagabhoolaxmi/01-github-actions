@@ -1,0 +1,13 @@
+#specify the workflow name,NAME is a reserved keyword
+name: First workflow
+#when should the workflow be executed ON is a reserved keyword and what event should be used for trigerring
+on: workflow_dispatch
+#JOBS 
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "hello world"
+      - name: Print goodbye
+        run: echo "done-bye"
